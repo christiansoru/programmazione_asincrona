@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .todo-item button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task" required>
+        <label for = "todo-endtime">Add end date</label>
+        <input type="date" id="todo-endtime" required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list" class="todo-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
